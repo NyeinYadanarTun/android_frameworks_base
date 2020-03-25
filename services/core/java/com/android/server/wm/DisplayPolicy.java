@@ -637,9 +637,7 @@ public class DisplayPolicy {
                 mDisplayContent.getDisplayInfo(),
                 mService.mHighRefreshRateBlacklist);
 
-        if (mDisplayContent.isDefaultDisplay) {
-            mSettingsObserver = new SettingsObserver(mHandler);
-        }
+        mSettingsObserver = new SettingsObserver(mHandler);
     }
 
     void systemReady() {
